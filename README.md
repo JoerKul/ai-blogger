@@ -1,4 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next AI Blogger
+
+We're going to build an AI blog generator powered by OpenAI's GPT-4 and DALL·E 3 models, Supabase backend for database and storage, NextJs 14 for our frontend application, and Clerk for authentication and user management.
+
+<img src='ai-blogger.png' width="400" >
+
+## Architecture
+
+We'll start by creating a fullstack app using NextJs 14 and Supabase. We'll then add authentication using Clerk to protect our endpoints, and lastly, we'll add an API Gateway to proxy our backend and expose our API to other developers with API key authentication and rate limiting.
+
+## Backend
+
+### Supabase
+
+We're going to use supabase to store our blog posts and images. Supabase is an open source Firebase alternative. It provides database, authentication, storage, and serverless functions. It's built on top of PostgreSQL and provides a nice UI for managing your database.
+
+## Frontend
+
+### NextJs
+
+We're going to use NextJs 14 to build our frontend application and use server actions to handle form submission and API calls. We're going to learn about the App router, caching, server actions, and adding loading UI to our forms.
+
+### Clerk
+
+We're going to use Clerk to add authentication to our application. Clerk is a complete suite of embeddable UIs, flexible APIs, and admin dashboards to authenticate and manage your users.
 
 ## Getting Started
 
@@ -15,19 +39,6 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
